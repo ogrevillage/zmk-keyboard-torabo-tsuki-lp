@@ -31,9 +31,9 @@
         layer_1 {
             bindings = <
 &trans  &trans  &trans  &trans     &trans     &trans                  &trans  &trans     &trans          &trans     &trans  &trans
-&trans  &trans  &trans  &trans     &trans     &trans                  &trans  &trans     &mmv MOVE_UP    &trans     &trans  &trans
+&trans  &trans  &trans  &trans     &trans     &trans                  &trans  &trans     &msc SCRL_UP    &trans     &trans  &trans
 &trans  &trans  &trans  &mkp RCLK  &mkp LCLK  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp MCLK       &mkp RCLK  &trans  &trans
-&trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans  &trans  &trans     &mmv MOVE_DOWN  &trans     &trans  &trans
+&trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans  &trans  &trans     &msc SCRL_DOWN  &trans     &trans  &trans
 &trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans  &trans  &trans     &trans          &trans     &trans  &trans
             >;
         };
@@ -50,11 +50,11 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans         &trans        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL     &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &kp AT_SIGN    &kp NUMBER_7  &kp NUMBER_8          &kp NUMBER_9           &kp SLASH     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp INT_YEN    &kp NUMBER_4  &kp NUMBER_5          &kp NUMBER_6           &kp ASTERISK  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp N0         &kp NUMBER_1  &kp NUMBER_2          &kp NUMBER_3           &kp MINUS     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp BACKSPACE  &trans        &trans                &kp PERIOD             &kp PLUS      &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans           &trans        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL     &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &kp LS(AT_SIGN)  &kp NUMBER_7  &kp NUMBER_8          &kp NUMBER_9           &kp SLASH     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp INT_YEN      &kp NUMBER_4  &kp NUMBER_5          &kp NUMBER_6           &kp ASTERISK  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp N0           &kp NUMBER_1  &kp NUMBER_2          &kp NUMBER_3           &kp MINUS     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp BACKSPACE    &trans        &trans                &kp PERIOD             &kp PLUS      &trans
             >;
         };
 
