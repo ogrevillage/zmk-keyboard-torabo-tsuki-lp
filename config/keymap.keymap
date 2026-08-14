@@ -40,11 +40,11 @@
 
         layer_2 {
             bindings = <
-&trans  &trans  &trans            &trans            &trans             &trans                  &trans  &trans    &trans          &trans     &trans  &trans
-&trans  &trans  &kp LG(LEFT)      &kp LG(UP_ARROW)  &kp LG(RIGHT)      &trans                  &trans  &trans    &kp UP_ARROW    &trans     &trans  &trans
-&trans  &trans  &kp LG(LA(LEFT))  &trans            &kp LA(LG(RIGHT))  &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &trans  &trans
-&trans  &trans  &kp LS(LG(LEFT))  &kp LG(Z)         &kp LS(LG(RIGHT))  &trans  &trans  &trans  &trans  &trans    &trans          &trans     &trans  &trans
-&trans  &trans  &trans            &trans            &trans             &trans  &trans  &trans  &trans  &trans    &trans          &trans     &trans  &trans
+&trans  &trans  &trans            &trans              &trans             &trans                  &trans  &trans    &trans          &trans     &trans  &trans
+&trans  &trans  &trans            &kp LG(Z)           &trans             &trans                  &trans  &trans    &kp UP_ARROW    &trans     &trans  &trans
+&trans  &trans  &kp LG(LS(LEFT))  &kp LG(UP_ARROW)    &kp LG(LS(RIGHT))  &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &trans  &trans
+&trans  &trans  &kp LG(LEFT)      &kp LG(DOWN_ARROW)  &kp LG(RIGHT)      &trans  &trans  &trans  &trans  &trans    &trans          &trans     &trans  &trans
+&trans  &trans  &trans            &trans              &trans             &trans  &trans  &trans  &trans  &trans    &trans          &trans     &trans  &trans
             >;
         };
 
