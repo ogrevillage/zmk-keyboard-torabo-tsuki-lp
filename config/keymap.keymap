@@ -30,6 +30,7 @@
         };
 
         layer_1 {
+            label = "L1 MOUSE";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans     &trans          &trans     &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans     &msc SCRL_UP    &trans     &trans  &trans
