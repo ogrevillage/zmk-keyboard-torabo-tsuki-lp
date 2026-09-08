@@ -31,15 +31,13 @@ jobs:
 
       - name: Parse ZMK keymap
         run: |
-          keymap parse \
-            -c keymap_drawer.config.yaml \
+          keymap -c keymap_drawer.config.yaml parse \
             -z config/keymap.keymap \
             -o keymap.yaml
 
       - name: Draw SVG
         run: |
-          keymap draw \
-            -c keymap_drawer.config.yaml \
+          keymap -c keymap_drawer.config.yaml draw \
             -j config/info.json \
             keymap.yaml \
             -o Torabo-tuki.svg
