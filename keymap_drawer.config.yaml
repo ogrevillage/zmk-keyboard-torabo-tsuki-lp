@@ -1,0 +1,160 @@
+parse_config:
+  raw_binding_map:
+    '&sys_reset': Reset
+    '&bootloader': Boot
+    '&caps_word': Caps Word
+
+    # Mouse
+    '&mkp LCLK': "LClick"
+    '&mkp RCLK': "RClick"
+    '&mkp MCLK': "MClick"
+
+    # Scroll
+    '&msc SCRL_UP': "Scr↑"
+    '&msc SCRL_DOWN': "Scr↓"
+
+    # Layer
+    '&to 0': "L0"
+
+    # JIS Shift combinations
+    '&kp LS(MINUS)': "="
+
+    '&kp LS(NUMBER_8)': "("
+    '&kp LS(N8)': "("
+
+    '&kp LS(NUMBER_9)': ")"
+    '&kp LS(N9)': ")"
+
+    '&kp LS(INT1)': "_"
+    '&kp LS(INT3)': "|"
+
+  layer_legend_map:
+    "L0 BASE": "L0"
+    "L1 MOUSE": "L1"
+    "L2 MODIFIER": "L2"
+    "L3 NUMBER": "L3"
+    "L4 FUNCTION": "L4"
+    "L5 BT": "L5"
+
+  zmk_keycode_map:
+    LANGUAGE_1: "かな"
+    LANG1: "かな"
+
+    LANGUAGE_2: "英数"
+    LANG2: "英数"
+
+    LEFT_SHIFT: "Shift"
+    LSHIFT: "Shift"
+    LSHFT: "Shift"
+    RIGHT_SHIFT: "Shift"
+    RSHIFT: "Shift"
+    RSHFT: "Shift"
+
+    LEFT_CONTROL: "Ctrl"
+    LEFT_CTRL: "Ctrl"
+    LCTRL: "Ctrl"
+    RIGHT_CONTROL: "Ctrl"
+    RIGHT_CTRL: "Ctrl"
+    RCTRL: "Ctrl"
+
+    LEFT_ALT: "Alt"
+    LALT: "Alt"
+    RIGHT_ALT: "Alt"
+    RALT: "Alt"
+
+    LEFT_GUI: "Win"
+    LGUI: "Win"
+    RIGHT_GUI: "Win"
+    RGUI: "Win"
+    LWIN: "Win"
+
+    DELETE: "Del"
+    DEL: "Del"
+
+    ENTER: "Enter"
+    RETURN: "Enter"
+    RET: "Enter"
+
+    TAB: "Tab"
+    SPACE: "Space"
+
+    ESCAPE: "Esc"
+    ESC: "Esc"
+
+    BACKSPACE: "BS"
+    BSPC: "BS"
+
+    CAPS: "Caps"
+
+    SEMI: ";"
+    SEMICOLON: ";"
+
+    COMMA: ","
+
+    DOT: "."
+    PERIOD: "."
+
+    SINGLE_QUOTE: ":"
+    APOS: ":"
+    APOSTROPHE: ":"
+
+    INTERNATIONAL_1: "\\"
+    INT1: "\\"
+
+    SLASH: "/"
+
+    LEFT_BRACKET: "@"
+    LEFTBRACKET: "@"
+
+    INT_YEN: "￥"
+    INT3: "￥"
+
+    RIGHT_BRACKET: "["
+    RIGHTBRACKET: "["
+
+    NON_US_HASH: "]"
+    NUHS: "]"
+
+    EQUAL: "^"
+
+    KP_MINUS: "-"
+    KPMINUS: "-"
+
+    KP_PLUS: "+"
+    KPPLUS: "+"
+
+    KP_MULTIPLY: "*"
+    KPMULTIPLY: "*"
+
+    KP_DIVIDE: "/"
+    KP_SLASH: "/"
+    KPSLASH: "/"
+
+    UP_ARROW: "↑"
+    UP: "↑"
+
+    DOWN_ARROW: "↓"
+    DOWN: "↓"
+
+    LEFT_ARROW: "←"
+    LEFT: "←"
+
+    RIGHT_ARROW: "→"
+    RIGHT: "→"
+
+  modifier_fn_map:
+    left_ctrl: "Ctrl"
+    right_ctrl: "Ctrl"
+    left_shift: "Shift"
+    right_shift: "Shift"
+    left_alt: "Alt"
+    right_alt: "Alt"
+    left_gui: "Win"
+    right_gui: "Win"
+    keycode_combiner: "{mods}+{key}"
+    mod_combiner: "{mod_1}+{mod_2}"
+
+draw_config:
+  dark_mode: auto
+  glyph_tap_size: 18
+  footer_text: 'Torabo-tuki LP KEYMAPS | Created with keymap-drawer'
