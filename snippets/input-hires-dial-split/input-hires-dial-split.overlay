@@ -1,0 +1,43 @@
+#include <behaviors/hires_dial.dtsi>
+
+/ {
+    hires_dial: hires_dial {
+        compatible = "sekigon,remote-hires-dial";
+        counts-per-revolution = <1275>;
+        status = "okay";
+    };
+
+    sensors {
+        compatible = "zmk,keymap-sensors";
+        sensors = <&hires_dial>;
+        triggers-per-rotation = <20>;
+    };
+};
+
+&hires_dial_scroll {
+    sensor = <&hires_dial>;
+};
+
+&{/keymap/layer_0} {
+    sensor-bindings = <&hires_dial_scroll 10 1>;
+};
+
+&{/keymap/NUM} {
+    sensor-bindings = <&hires_dial_scroll 10 1>;
+};
+
+&{/keymap/FUNC} {
+    sensor-bindings = <&hires_dial_scroll 10 1>;
+};
+
+&{/keymap/MOUSE} {
+    sensor-bindings = <&hires_dial_scroll 10 1>;
+};
+
+&{/keymap/BT} {
+    sensor-bindings = <&hires_dial_scroll 10 1>;
+};
+
+&{/keymap/MOD} {
+    sensor-bindings = <&hires_dial_scroll 10 1>;
+};
