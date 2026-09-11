@@ -32,5 +32,8 @@ manifest:
     - name: zmk-layout-shift
       remote: kot149
       revision: v1
+    - name: zmk-driver-hires-dial
+      remote: sekigon-gonnoc
+      revision: main
   self:
     path: config
