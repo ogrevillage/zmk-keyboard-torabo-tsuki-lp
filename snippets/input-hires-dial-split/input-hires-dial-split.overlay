@@ -1,4 +1,5 @@
 #include <behaviors/hires_dial.dtsi>
+#include <dt-bindings/zmk/input_transform.h>
 
 / {
     hires_dial: hires_dial {
@@ -16,6 +17,7 @@
     hires_dial_scroll_listener: hires_dial_scroll_listener {
         compatible = "zmk,input-listener";
         device = <&hires_dial_scroll>;
+        input-processors = <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>;
     };
 };
 
