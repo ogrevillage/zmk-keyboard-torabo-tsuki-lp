@@ -45,6 +45,3 @@
     sensor-bindings = <&hires_dial_scroll 10 1>;
 };
 
-&{/keymap/MOD} {
-    sensor-bindings = <&hires_dial_scroll 10 1>;
-};
