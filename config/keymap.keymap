@@ -15,29 +15,7 @@
 &kp TAB    &kp Q         &kp W         &kp E   &kp R   &kp T                               &kp Y            &kp U   &kp I      &kp O      &kp P              &kp LEFT_BRACKET
 &kp CAPS   &kp A         &kp S         &kp D   &kp F   &kp G         &kp LANG2  &kp LANG1  &kp H            &kp J   &kp K      &kp L      &kp SEMI           &kp SINGLE_QUOTE
 &kp LSHFT  &kp Z         &kp X         &kp C   &kp V   &kp B         &none      &none      &kp N            &kp M   &kp COMMA  &kp DOT    &kp SLASH          &kp INTERNATIONAL_1
-&kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &none   &mo 5   &lt 2 DELETE  &kp SPACE  &kp ENTER  &lt 1 BACKSPACE  &none   &none      &kp EQUAL  &kp RIGHT_BRACKET  &kp NON_US_HASH
-            >;
-        };
-
-        NUM {
-            label = "L3 NUMBER";
-            bindings = <
-&trans  &trans  &trans  &trans            &trans            &trans                  &trans            &trans        &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(MINUS)    &trans
-&trans  &trans  &trans  &kp INT3          &kp COMMA         &trans                  &kp LEFT_BRACKET  &kp NUMBER_7  &kp NUMBER_8      &kp NUMBER_9      &kp KP_DIVIDE    &trans
-&trans  &trans  &trans  &kp LS(NUMBER_5)  &kp SINGLE_QUOTE  &trans  &trans  &trans  &kp INT_YEN       &kp NUMBER_4  &kp NUMBER_5      &kp NUMBER_6      &kp KP_MULTIPLY  &trans
-&trans  &trans  &trans  &trans            &trans            &trans  &trans  &trans  &kp N0            &kp NUMBER_1  &kp NUMBER_2      &kp NUMBER_3      &kp KP_MINUS     &trans
-&trans  &trans  &trans  &trans            &trans            &trans  &trans  &trans  &kp BACKSPACE     &trans        &trans            &kp PERIOD        &kp KP_PLUS      &trans
-            >;
-        };
-
-        FUNC {
-            label = "L4 FUNCTION";
-            bindings = <
-&trans  &kp F1  &kp F2             &kp F3              &kp F4                              &kp F5  &kp F6        &kp F7          &kp F8          &kp F9           &kp F10  &kp F11
-&trans  &trans  &trans             &kp LG(Z)           &trans              &trans  &trans  &trans  &kp UP_ARROW  &trans          &trans          &kp F12
-&trans  &trans  &kp LG(LS(LEFT))   &kp LG(UP_ARROW)    &kp LG(LS(RIGHT))   &trans  &trans  &trans  &trans        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans   &trans
-&trans  &trans  &kp LG(LEFT)       &kp LG(DOWN_ARROW)  &kp LG(RIGHT)       &trans  &trans  &trans  &trans        &trans          &trans          &trans           &trans   &trans
-&trans  &trans  &trans             &trans              &trans              &trans  &trans  &trans  &trans        &trans          &trans          &trans           &trans   &trans
+&kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &none   &none   &lt 3 DELETE  &kp SPACE  &kp ENTER  &lt 2 BACKSPACE  &none   &none      &kp EQUAL  &kp RIGHT_BRACKET  &kp NON_US_HASH
             >;
         };
 
@@ -52,25 +30,36 @@
             >;
         };
 
+        NUM {
+            label = "L2 NUMBER";
+            bindings = <
+&trans  &trans  &trans  &trans            &trans            &trans                  &trans            &trans        &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(MINUS)    &trans
+&trans  &trans  &trans  &kp INT3          &kp COMMA         &trans                  &kp LEFT_BRACKET  &kp NUMBER_7  &kp NUMBER_8      &kp NUMBER_9      &kp KP_DIVIDE    &trans
+&trans  &trans  &trans  &kp LS(NUMBER_5)  &kp SINGLE_QUOTE  &trans  &trans  &trans  &kp INT_YEN       &kp NUMBER_4  &kp NUMBER_5      &kp NUMBER_6      &kp KP_MULTIPLY  &trans
+&trans  &trans  &trans  &trans            &trans            &trans  &trans  &trans  &kp N0            &kp NUMBER_1  &kp NUMBER_2      &kp NUMBER_3      &kp KP_MINUS     &trans
+&trans  &trans  &trans  &trans            &trans            &trans  &trans  &trans  &kp BACKSPACE     &trans        &trans            &kp PERIOD        &kp KP_PLUS      &trans
+            >;
+        };
+
+        FUNC {
+            label = "L3 FUNCTION";
+            bindings = <
+&trans  &kp F1  &kp F2             &kp F3              &kp F4                              &kp F5  &kp F6        &kp F7          &kp F8          &kp F9           &kp F10  &kp F11
+&trans  &trans  &trans             &kp LG(Z)           &trans              &trans  &trans  &trans  &kp UP_ARROW  &trans          &trans          &kp F12
+&trans  &trans  &kp LG(LS(LEFT))   &kp LG(UP_ARROW)    &kp LG(LS(RIGHT))   &trans  &trans  &trans  &trans        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans   &trans
+&trans  &trans  &kp LG(LEFT)       &kp LG(DOWN_ARROW)  &kp LG(RIGHT)       &trans  &trans  &trans  &trans        &trans          &trans          &trans           &trans   &trans
+&trans  &trans  &trans             &trans              &trans              &trans  &trans  &trans  &trans        &trans          &trans          &trans           &trans   &trans
+            >;
+        };
+
         BT {
-            label = "L5 BT";
+            label = "L4 BT";
             bindings = <
 &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans        &trans        &trans        &trans        &trans                        &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans        &trans        &bt BT_PRV    &bt BT_NXT    &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        MOD {
-            label = "L2 MODIFIER";
-            bindings = <
-&trans  &trans  &trans            &trans              &trans             &trans                  &trans  &trans    &trans          &trans     &trans  &trans
-&trans  &trans  &trans            &kp LG(Z)           &trans             &trans                  &trans  &trans    &kp UP_ARROW    &trans     &trans  &trans
-&trans  &trans  &kp LG(LS(LEFT))  &kp LG(UP_ARROW)    &kp LG(LS(RIGHT))  &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &trans  &trans
-&trans  &trans  &kp LG(LEFT)      &kp LG(DOWN_ARROW)  &kp LG(RIGHT)      &trans  &trans  &trans  &trans  &trans    &trans          &trans     &trans  &trans
-&trans  &trans  &trans            &trans              &trans             &trans  &trans  &trans  &trans  &trans    &trans          &trans     &trans  &trans
             >;
         };
     };
