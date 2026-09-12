@@ -1,0 +1,4 @@
+name: input-hires-dial-split
+append:
+  EXTRA_DTC_OVERLAY_FILE: input-hires-dial-split.overlay
+  EXTRA_CONF_FILE: input-hires-dial-split.conf
