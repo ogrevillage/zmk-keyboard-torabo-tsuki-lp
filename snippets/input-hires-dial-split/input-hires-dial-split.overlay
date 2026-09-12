@@ -12,6 +12,11 @@
         sensors = <&hires_dial>;
         triggers-per-rotation = <20>;
     };
+
+    hires_dial_scroll_listener: hires_dial_scroll_listener {
+        compatible = "zmk,input-listener";
+        device = <&hires_dial_scroll>;
+    };
 };
 
 &hires_dial_scroll {
