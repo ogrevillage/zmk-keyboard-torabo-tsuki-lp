@@ -58,10 +58,10 @@ layers:
   - Alt
   - ''
   - ''
-  - {t: Del, h: L3 FUNCTION}
+  - {t: Del, h: L2 NUMBER}
   - Space
   - Enter
-  - {t: BS, h: L2 NUMBER}
+  - {t: BS, h: L3 FUNCTION}
   - ''
   - ''
   - ^
@@ -192,10 +192,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: BS, type: held}
+  - BS
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - .
@@ -259,10 +259,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
