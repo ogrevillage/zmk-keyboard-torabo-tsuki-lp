@@ -56,7 +56,7 @@ layers:
   - Ctrl
   - Win
   - Alt
-  - ''
+  - L1
   - ''
   - {t: Del, h: L2 NUMBER}
   - Space
@@ -123,7 +123,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
